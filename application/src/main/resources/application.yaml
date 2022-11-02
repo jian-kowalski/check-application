@@ -1,0 +1,14 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /v1
+
+    
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update # Cria tabelas automaticamente
+    show-sql: true # exibe o sql no terminal
+  datasource:
+    url: jdbc:mysql://localhost:3306/aw_healthy_app?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: root
